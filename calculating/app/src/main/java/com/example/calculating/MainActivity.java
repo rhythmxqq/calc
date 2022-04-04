@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         EditText firstTT = (EditText) findViewById(R.id.persloginput);
         EditText secondTT = (EditText) findViewById(R.id.persloginput);
         //убирание текста перед самим вводом
-        firstTT.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        firstTT.setOnFocusChangeListener(new View.OnFocusChangeListener() {//слушатель убирания текста 
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         TextView firstTT = findViewById(R.id.persloginput);
         TextView secondTT = findViewById(R.id.vtorsloginput);
         //Поиск ошибок в вводе
-        try {
+        try {//проверка переводом в инт
             first = Integer.parseInt(String.valueOf(firstTT.getText()));
             second = Integer.parseInt(String.valueOf(secondTT.getText()));
             //запуск активити с ответом
