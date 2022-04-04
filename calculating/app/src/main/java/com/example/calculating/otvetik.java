@@ -14,7 +14,7 @@ public class otvetik extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otvetik);
 
-        //Извлечение Intent
+        //Извлечение Intent, в 1 файле из тру катч 
         Intent intent = getIntent();
         first = intent.getIntExtra("first", first);
         second = intent.getIntExtra("second", second);
